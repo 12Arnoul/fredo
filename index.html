@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Site officiel de la Mairie de la Commune des Aguégués — Département de l'Ouémé, République du Bénin. Services administratifs, actualités et informations pour les citoyens." />
+  <title>Mairie des Aguégués | Commune de l'Ouémé — Bénin</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-left">
+        <span><i class="fas fa-phone"></i> +229 97 00 00 00</span>
+        <span><i class="fas fa-envelope"></i> contact@mairie-aguegues.bj</span>
+      </div>
+      <div class="topbar-right">
+        <span><i class="fas fa-clock"></i> Lun-Ven : 8h00 – 17h00</span>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <div class="logo-emblem">
+          <div class="emblem-ring">
+            <div class="emblem-core">
+              <i class="fas fa-water"></i>
+            </div>
+          </div>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">Mairie des Aguégués</span>
+          <span class="logo-subtitle">Commune de l'Ouémé · Bénin</span>
+        </div>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+          <li class="nav-dropdown">
+            <a href="#" class="nav-link">La Commune <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#presentation">Présentation</a></li>
+              <li><a href="#histoire">Histoire & Patrimoine</a></li>
+              <li><a href="#geographie">Géographie</a></li>
+              <li><a href="#population">Population</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <a href="#" class="nav-link">Administration <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#maire">Le Maire</a></li>
+              <li><a href="#conseil">Conseil Municipal</a></li>
+              <li><a href="#organigramme">Organigramme</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#etat-civil">État Civil</a></li>
+              <li><a href="#urbanisme">Urbanisme</a></li>
+              <li><a href="#social">Action Sociale</a></li>
+              <li><a href="#education">Éducation</a></li>
+            </ul>
+          </li>
+          <li><a href="#actualites" class="nav-link">Actualités</a></li>
+          <li><a href="#tourisme" class="nav-link">Tourisme</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA Button -->
+      <a href="#services" class="btn btn-primary nav-cta">
+        <i class="fas fa-concierge-bell"></i> Nos Services
+      </a>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="accueil">
+    <div class="hero-bg">
+      <img src="hero.jpg" alt="Vue aérienne des Aguégués" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-star"></i> Bienvenue à la Venise Africaine
+      </div>
+      <h1 class="hero-title">
+        Commune des<br /><span class="hero-accent">Aguégués</span>
+      </h1>
+      <p class="hero-desc">
+        Une commune lacustre d'exception au cœur du département de l'Ouémé, Bénin.<br />
+        Un patrimoine naturel et culturel unique à découvrir.
+      </p>
+      <div class="hero-actions">
+        <a href="#services" class="btn btn-primary btn-lg">
+          <i class="fas fa-th-large"></i> Nos Services
+        </a>
+        <a href="#presentation" class="btn btn-outline btn-lg">
+          <i class="fas fa-compass"></i> Découvrir la Commune
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-number" data-target="44562">0</span>
+          <span class="stat-label">Habitants</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-number" data-target="103">0</span><span>km²</span>
+          <span class="stat-label">Superficie</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-number" data-target="12">0</span>
+          <span class="stat-label">Villages</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-number" data-target="433">0</span>
+          <span class="stat-label">Hab./km²</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#quicklinks"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ===== QUICK LINKS ===== -->
+  <section class="quicklinks" id="quicklinks">
+    <div class="container">
+      <div class="quicklinks-grid">
+        <a href="#etat-civil" class="quicklink-card" id="ql-etat-civil">
+          <div class="ql-icon"><i class="fas fa-id-card"></i></div>
+          <div class="ql-content">
+            <h3>État Civil</h3>
+            <p>Actes de naissance, mariage, décès</p>
+          </div>
+          <i class="fas fa-arrow-right ql-arrow"></i>
+        </a>
+        <a href="#urbanisme" class="quicklink-card" id="ql-urbanisme">
+          <div class="ql-icon"><i class="fas fa-building"></i></div>
+          <div class="ql-content">
+            <h3>Urbanisme</h3>
+            <p>Permis de construire, cadastre</p>
+          </div>
+          <i class="fas fa-arrow-right ql-arrow"></i>
+        </a>
+        <a href="#social" class="quicklink-card" id="ql-social">
+          <div class="ql-icon"><i class="fas fa-hands-helping"></i></div>
+          <div class="ql-content">
+            <h3>Action Sociale</h3>
+            <p>Aide aux familles, inclusion</p>
+          </div>
+          <i class="fas fa-arrow-right ql-arrow"></i>
+        </a>
+        <a href="#education" class="quicklink-card" id="ql-education">
+          <div class="ql-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="ql-content">
+            <h3>Éducation</h3>
+            <p>Écoles, formations, jeunesse</p>
+          </div>
+          <i class="fas fa-arrow-right ql-arrow"></i>
+        </a>
+        <a href="#contact" class="quicklink-card" id="ql-contact">
+          <div class="ql-icon"><i class="fas fa-phone-alt"></i></div>
+          <div class="ql-content">
+            <h3>Nous Contacter</h3>
+            <p>Horaires et coordonnées</p>
+          </div>
+          <i class="fas fa-arrow-right ql-arrow"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACTUALITES ===== -->
+  <section class="actualites section" id="actualites">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Information</span>
+        <h2 class="section-title">Actualités & Annonces</h2>
+        <p class="section-desc">Restez informé des dernières nouvelles de la commune des Aguégués</p>
+      </div>
+      <div class="news-grid">
+        <!-- Featured -->
+        <article class="news-featured" id="news-1">
+          <div class="news-img-wrap">
+            <img src="mairie.jpg" alt="Réunion du conseil municipal" />
+            <span class="news-cat">Gouvernance</span>
+          </div>
+          <div class="news-body">
+            <time class="news-date"><i class="fas fa-calendar"></i> 10 Septembre 2026</time>
+            <h3 class="news-title">Le Conseil Municipal adopte le Plan de Développement Communal 2026-2030</h3>
+            <p class="news-excerpt">
+              Lors de la session extraordinaire du 8 septembre 2026, le conseil municipal des Aguégués a adopté à l'unanimité le nouveau Plan de Développement Communal (PDC), fixant les priorités en matière d'infrastructure, d'eau potable et de développement économique.
+            </p>
+            <a href="#" class="btn btn-primary btn-sm">Lire la suite <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Side news -->
+        <div class="news-side">
+          <article class="news-card" id="news-2">
+            <div class="news-card-img">
+              <img src="village-life.jpg" alt="Marché lacustre" />
+              <span class="news-cat news-cat-sm">Économie</span>
+            </div>
+            <div class="news-card-body">
+              <time class="news-date"><i class="fas fa-calendar"></i> 5 Septembre 2026</time>
+              <h4>Inauguration du nouveau marché lacustre de Vêkky</h4>
+              <p>Un nouveau marché flottant a été inauguré dans le village de Vêkky, renforçant les échanges économiques de la commune.</p>
+              <a href="#" class="read-more">Lire <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+          <article class="news-card" id="news-3">
+            <div class="news-card-img">
+              <img src="fishing.jpg" alt="Pêche traditionnelle" />
+              <span class="news-cat news-cat-sm">Environnement</span>
+            </div>
+            <div class="news-card-body">
+              <time class="news-date"><i class="fas fa-calendar"></i> 1 Septembre 2026</time>
+              <h4>Programme de préservation de la biodiversité aquatique</h4>
+              <p>La mairie lance un programme de gestion durable des ressources halieutiques du lac Nokoué en partenariat avec le PNUD.</p>
+              <a href="#" class="read-more">Lire <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+          <article class="news-card" id="news-4">
+            <div class="news-card-img">
+              <img src="mairie.jpg" alt="Infrastructures" />
+              <span class="news-cat news-cat-sm">Infrastructure</span>
+            </div>
+            <div class="news-card-body">
+              <time class="news-date"><i class="fas fa-calendar"></i> 25 Août 2026</time>
+              <h4>Construction de 3 nouveaux forages d'eau potable dans la commune</h4>
+              <p>Dans le cadre du programme national d'accès à l'eau potable, 3 nouveaux forages sont en cours de construction.</p>
+              <a href="#" class="read-more">Lire <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="section-cta">
+        <a href="#" class="btn btn-outline">Toutes les actualités <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRESENTATION ===== -->
+  <section class="presentation section bg-light" id="presentation">
+    <div class="container">
+      <div class="two-col">
+        <div class="col-text">
+          <span class="section-tag">Notre Commune</span>
+          <h2 class="section-title">La Venise Africaine du Bénin</h2>
+          <p class="lead">
+            Les Aguégués est une commune lacustre unique au monde, nichée entre le lac Nokoué et la lagune côtière, dans le département de l'Ouémé au Bénin.
+          </p>
+          <p>
+            Surnommée la <strong>« Venise Africaine »</strong>, la commune est célèbre pour ses villages construits entièrement sur pilotis au-dessus de l'eau. Ses habitants se déplacent en pirogues traditionnelles, perpétuant un mode de vie ancestral transmis de génération en génération depuis des siècles.
+          </p>
+          <p>
+            Avec une superficie de <strong>103 km²</strong> et une population de plus de <strong>44 562 habitants</strong> (recensement 2013), la commune des Aguégués est un territoire d'une richesse culturelle et naturelle exceptionnelle, attirée par des milliers de visiteurs chaque année.
+          </p>
+          <div class="info-badges">
+            <div class="info-badge">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Département de l'Ouémé</span>
+            </div>
+            <div class="info-badge">
+              <i class="fas fa-globe-africa"></i>
+              <span>République du Bénin</span>
+            </div>
+            <div class="info-badge">
+              <i class="fas fa-map"></i>
+              <span>6°29'N, 2°32'E</span>
+            </div>
+          </div>
+          <a href="#histoire" class="btn btn-primary">
+            <i class="fas fa-book-open"></i> Histoire & Patrimoine
+          </a>
+        </div>
+        <div class="col-media">
+          <div class="media-stack">
+            <img src="hero.jpg" alt="Vue aérienne des Aguégués" class="media-main" />
+            <img src="village-life.jpg" alt="Vie au village lacustre" class="media-secondary" />
+            <div class="media-badge">
+              <i class="fas fa-award"></i>
+              <span>Patrimoine<br />Naturel Unique</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Administration</span>
+        <h2 class="section-title">Services à la Population</h2>
+        <p class="section-desc">La Mairie des Aguégués met à votre disposition l'ensemble de ses services administratifs</p>
+      </div>
+      <div class="services-grid">
+
+        <!-- État Civil -->
+        <div class="service-card" id="etat-civil">
+          <div class="service-icon-wrap service-green">
+            <i class="fas fa-id-card"></i>
+          </div>
+          <h3>État Civil</h3>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Acte de naissance</li>
+            <li><i class="fas fa-check"></i> Certificat de mariage</li>
+            <li><i class="fas fa-check"></i> Acte de décès</li>
+            <li><i class="fas fa-check"></i> Légalisation de documents</li>
+            <li><i class="fas fa-check"></i> Certificat de résidence</li>
+          </ul>
+          <a href="#contact" class="btn btn-sm btn-primary">Faire une demande</a>
+        </div>
+
+        <!-- Urbanisme -->
+        <div class="service-card" id="urbanisme">
+          <div class="service-icon-wrap service-blue">
+            <i class="fas fa-drafting-compass"></i>
+          </div>
+          <h3>Urbanisme & Habitat</h3>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Permis de construire</li>
+            <li><i class="fas fa-check"></i> Certificat de conformité</li>
+            <li><i class="fas fa-check"></i> Plan cadastral</li>
+            <li><i class="fas fa-check"></i> Autorisation de lotissement</li>
+            <li><i class="fas fa-check"></i> Certificat foncier</li>
+          </ul>
+          <a href="#contact" class="btn btn-sm btn-primary">Faire une demande</a>
+        </div>
+
+        <!-- Action Sociale -->
+        <div class="service-card" id="social">
+          <div class="service-icon-wrap service-orange">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3>Action Sociale</h3>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Aide aux familles vulnérables</li>
+            <li><i class="fas fa-check"></i> Appui aux personnes âgées</li>
+            <li><i class="fas fa-check"></i> Assistance aux handicapés</li>
+            <li><i class="fas fa-check"></i> Protection de l'enfance</li>
+            <li><i class="fas fa-check"></i> Insertion professionnelle</li>
+          </ul>
+          <a href="#contact" class="btn btn-sm btn-primary">Faire une demande</a>
+        </div>
+
+        <!-- Éducation -->
+        <div class="service-card" id="education">
+          <div class="service-icon-wrap service-purple">
+            <i class="fas fa-school"></i>
+          </div>
+          <h3>Éducation & Jeunesse</h3>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Suivi des établissements scolaires</li>
+            <li><i class="fas fa-check"></i> Bourses communales</li>
+            <li><i class="fas fa-check"></i> Activités culturelles jeunesse</li>
+            <li><i class="fas fa-check"></i> Infrastructures sportives</li>
+            <li><i class="fas fa-check"></i> Alphabétisation des adultes</li>
+          </ul>
+          <a href="#contact" class="btn btn-sm btn-primary">Faire une demande</a>
+        </div>
+
+        <!-- Santé -->
+        <div class="service-card" id="sante">
+          <div class="service-icon-wrap service-red">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <h3>Santé & Hygiène</h3>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Centre de santé communal</li>
+            <li><i class="fas fa-check"></i> Campagnes de vaccination</li>
+            <li><i class="fas fa-check"></i> Gestion des déchets</li>
+            <li><i class="fas fa-check"></i> Eau potable et assainissement</li>
+            <li><i class="fas fa-check"></i> Sensibilisation sanitaire</li>
+          </ul>
+          <a href="#contact" class="btn btn-sm btn-primary">Faire une demande</a>
+        </div>
+
+        <!-- Économie -->
+        <div class="service-card" id="economie">
+          <div class="service-icon-wrap service-teal">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Économie & Commerce</h3>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Autorisation d'exercer</li>
+            <li><i class="fas fa-check"></i> Marchés et foires</li>
+            <li><i class="fas fa-check"></i> Appui aux coopératives</li>
+            <li><i class="fas fa-check"></i> Promotion du tourisme</li>
+            <li><i class="fas fa-check"></i> Microcrédit communal</li>
+          </ul>
+          <a href="#contact" class="btn btn-sm btn-primary">Faire une demande</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAYOR / ADMINISTRATION ===== -->
+  <section class="admin section bg-dark" id="maire">
+    <div class="container">
+      <div class="two-col reverse">
+        <div class="col-text">
+          <span class="section-tag tag-light">Administration</span>
+          <h2 class="section-title title-light">Message du Maire</h2>
+          <div class="quote-block">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p class="quote-text">
+              « Ensemble, bâtissons les Aguégués de demain. Notre commune, avec son patrimoine naturel et culturel unique, est une terre de promesse et d'avenir. Ma priorité est d'améliorer les conditions de vie de tous nos citoyens, de préserver notre héritage lacustre, et de faire des Aguégués une commune modèle de développement durable au Bénin. »
+            </p>
+          </div>
+          <div class="mayor-info">
+            <div class="mayor-avatar">
+              <div class="avatar-placeholder">
+                <i class="fas fa-user-tie"></i>
+              </div>
+            </div>
+            <div class="mayor-details">
+              <h4>Agbokoumissi Ernest</h4>
+              <p>Maire de la Commune des Aguégués</p>
+              <p class="mandate">Mandat 2026 – 2033</p>
+            </div>
+          </div>
+          <div class="admin-actions">
+            <a href="#conseil" class="btn btn-primary">
+              <i class="fas fa-users"></i> Conseil Municipal
+            </a>
+            <a href="#contact" class="btn btn-outline-light">
+              <i class="fas fa-envelope"></i> Contacter le Maire
+            </a>
+          </div>
+        </div>
+        <div class="col-media">
+          <img src="mairie.jpg" alt="Hôtel de Ville des Aguégués" class="media-full rounded" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONSEIL MUNICIPAL ===== -->
+  <section class="conseil section bg-light" id="conseil">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Gouvernance</span>
+        <h2 class="section-title">Conseil Municipal</h2>
+        <p class="section-desc">Les élus qui représentent et servent la population des Aguégués</p>
+      </div>
+      <div class="conseil-grid">
+        <div class="conseiller-card" id="conseiller-1">
+          <div class="conseiller-avatar">
+            <div class="avatar-circle green"><i class="fas fa-user-tie"></i></div>
+          </div>
+          <h4>Agbokoumissi Ernest</h4>
+          <span class="conseiller-role">Maire</span>
+        </div>
+        <div class="conseiller-card" id="conseiller-2">
+          <div class="conseiller-avatar">
+            <div class="avatar-circle blue"><i class="fas fa-user"></i></div>
+          </div>
+          <h4>Adokpo Marguerite</h4>
+          <span class="conseiller-role">1ère Adjointe au Maire</span>
+        </div>
+        <div class="conseiller-card" id="conseiller-3">
+          <div class="conseiller-avatar">
+            <div class="avatar-circle orange"><i class="fas fa-user"></i></div>
+          </div>
+          <h4>Houessou François</h4>
+          <span class="conseiller-role">2ème Adjoint au Maire</span>
+        </div>
+        <div class="conseiller-card" id="conseiller-4">
+          <div class="conseiller-avatar">
+            <div class="avatar-circle purple"><i class="fas fa-user"></i></div>
+          </div>
+          <h4>Gbaguidi Thérèse</h4>
+          <span class="conseiller-role">Conseillère — Éducation</span>
+        </div>
+        <div class="conseiller-card" id="conseiller-5">
+          <div class="conseiller-avatar">
+            <div class="avatar-circle teal"><i class="fas fa-user"></i></div>
+          </div>
+          <h4>Zinzou Barthélémy</h4>
+          <span class="conseiller-role">Conseiller — Économie</span>
+        </div>
+        <div class="conseiller-card" id="conseiller-6">
+          <div class="conseiller-avatar">
+            <div class="avatar-circle red"><i class="fas fa-user"></i></div>
+          </div>
+          <h4>Dossou Rosalie</h4>
+          <span class="conseiller-role">Conseillère — Santé</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOURISME ===== -->
+  <section class="tourisme section" id="tourisme">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Découverte</span>
+        <h2 class="section-title">Tourisme & Patrimoine</h2>
+        <p class="section-desc">Explorez les merveilles naturelles et culturelles des Aguégués</p>
+      </div>
+      <div class="tourisme-grid">
+        <div class="tourisme-card" id="tourisme-1">
+          <div class="tourisme-img">
+            <img src="hero.jpg" alt="Villages lacustres" />
+            <div class="tourisme-overlay">
+              <i class="fas fa-water"></i>
+            </div>
+          </div>
+          <div class="tourisme-body">
+            <span class="tourisme-tag">Patrimoine</span>
+            <h3>Villages Lacustres sur Pilotis</h3>
+            <p>Découvrez les villages de Vêkky, Médédjonou et Avagbodji, construits entièrement sur les eaux du lac Nokoué. Une architecture vernaculaire unique en Afrique de l'Ouest.</p>
+            <div class="tourisme-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Lac Nokoué</span>
+              <span><i class="fas fa-clock"></i> Toute l'année</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tourisme-card" id="tourisme-2">
+          <div class="tourisme-img">
+            <img src="fishing.jpg" alt="Pêche traditionnelle" />
+            <div class="tourisme-overlay">
+              <i class="fas fa-fish"></i>
+            </div>
+          </div>
+          <div class="tourisme-body">
+            <span class="tourisme-tag">Culture & Traditions</span>
+            <h3>Pêche Traditionnelle Acadja</h3>
+            <p>Assistez ou participez aux techniques ancestrales de pêche Acadja, un savoir-faire transmis depuis des générations qui fait la réputation des pêcheurs des Aguégués.</p>
+            <div class="tourisme-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Lagune côtière</span>
+              <span><i class="fas fa-clock"></i> Saison sèche</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tourisme-card" id="tourisme-3">
+          <div class="tourisme-img">
+            <img src="village-life.jpg" alt="Marché lacustre" />
+            <div class="tourisme-overlay">
+              <i class="fas fa-store"></i>
+            </div>
+          </div>
+          <div class="tourisme-body">
+            <span class="tourisme-tag">Commerce & Culture</span>
+            <h3>Marchés Lacustres Flottants</h3>
+            <p>Vivez l'expérience unique des marchés qui se tiennent sur l'eau. Artisanat local, produits frais de la pêche, pagnes traditionnels et vie animée au fil de l'eau.</p>
+            <div class="tourisme-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Marché de Vêkky</span>
+              <span><i class="fas fa-clock"></i> Hebdomadaire</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infos pratiques -->
+      <div class="tourisme-info">
+        <div class="info-panel">
+          <div class="info-panel-icon"><i class="fas fa-route"></i></div>
+          <h4>Comment Venir ?</h4>
+          <p>À 25 km de Cotonou par la route nationale, puis traversée en pirogue depuis Porto-Novo. Des transports fluviaux réguliers desservent les villages.</p>
+        </div>
+        <div class="info-panel">
+          <div class="info-panel-icon"><i class="fas fa-hotel"></i></div>
+          <h4>Hébergement</h4>
+          <p>Des auberges sur pilotis et des chambres chez l'habitant permettent de vivre pleinement l'expérience de la vie lacustre des Aguégués.</p>
+        </div>
+        <div class="info-panel">
+          <div class="info-panel-icon"><i class="fas fa-info-circle"></i></div>
+          <h4>Infos Pratiques</h4>
+          <p>Meilleure période : Novembre à Mars (saison sèche). Prévoir une tenue légère, protection solaire et anti-moustiques. Respecter les coutumes locales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIE ===== -->
+  <section class="galerie section bg-dark" id="galerie">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag tag-light">Photos</span>
+        <h2 class="section-title title-light">Galerie des Aguégués</h2>
+      </div>
+      <div class="galerie-grid">
+        <div class="galerie-item galerie-large" id="gal-1">
+          <img src="hero.jpg" alt="Vue aérienne des Aguégués" />
+          <div class="galerie-caption">Vue aérienne — Les Aguégués au coucher du soleil</div>
+        </div>
+        <div class="galerie-item" id="gal-2">
+          <img src="village-life.jpg" alt="Marché lacustre" />
+          <div class="galerie-caption">Marché flottant animé</div>
+        </div>
+        <div class="galerie-item" id="gal-3">
+          <img src="fishing.jpg" alt="Pêcheurs" />
+          <div class="galerie-caption">Pêche traditionnelle à l'aube</div>
+        </div>
+        <div class="galerie-item" id="gal-4">
+          <img src="mairie.jpg" alt="Mairie des Aguégués" />
+          <div class="galerie-caption">Hôtel de Ville</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nous Joindre</span>
+        <h2 class="section-title">Contactez la Mairie</h2>
+        <p class="section-desc">Notre équipe est à votre disposition pour répondre à toutes vos questions</p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="contact-info-item" id="ci-adresse">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="ci-content">
+              <h4>Adresse</h4>
+              <p>Mairie des Aguégués<br />Commune des Aguégués<br />Département de l'Ouémé<br />République du Bénin</p>
+            </div>
+          </div>
+          <div class="contact-info-item" id="ci-horaires">
+            <div class="ci-icon"><i class="fas fa-clock"></i></div>
+            <div class="ci-content">
+              <h4>Horaires d'ouverture</h4>
+              <p>Lundi – Vendredi : 8h00 – 17h00<br />Samedi : 8h00 – 12h00<br />Dimanche : Fermé</p>
+            </div>
+          </div>
+          <div class="contact-info-item" id="ci-telephone">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div class="ci-content">
+              <h4>Téléphone</h4>
+              <p>+229 97 00 00 00<br />+229 96 00 00 00</p>
+            </div>
+          </div>
+          <div class="contact-info-item" id="ci-email">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div class="ci-content">
+              <h4>E-mail</h4>
+              <p>contact@mairie-aguegues.bj<br />secretariat@mairie-aguegues.bj</p>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="social-section">
+            <h4>Suivez-nous</h4>
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contact-form" novalidate>
+            <h3>Envoyez-nous un message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nom">Nom complet *</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Adresse e-mail *</label>
+                <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="telephone">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone" placeholder="+229 97 XX XX XX" />
+            </div>
+            <div class="form-group">
+              <label for="sujet">Sujet *</label>
+              <select id="sujet" name="sujet" required>
+                <option value="">Choisir un sujet</option>
+                <option value="etat-civil">État Civil</option>
+                <option value="urbanisme">Urbanisme</option>
+                <option value="social">Action Sociale</option>
+                <option value="education">Éducation</option>
+                <option value="tourisme">Tourisme</option>
+                <option value="autre">Autre demande</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Décrivez votre demande..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+              <i class="fas fa-paper-plane"></i> Envoyer le Message
+            </button>
+            <p class="form-note">* Champs obligatoires. Réponse sous 48h ouvrées.</p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map placeholder -->
+      <div class="map-section">
+        <div class="map-placeholder" id="map">
+          <div class="map-overlay-content">
+            <i class="fas fa-map-marked-alt"></i>
+            <h4>Localisation — Commune des Aguégués</h4>
+            <p>6° 29' 00" N, 2° 32' 00" E — Département de l'Ouémé, Bénin</p>
+            <a href="https://www.google.com/maps/search/Agu%C3%A9gu%C3%A9s+B%C3%A9nin" target="_blank" rel="noopener" class="btn btn-primary">
+              <i class="fas fa-external-link-alt"></i> Ouvrir dans Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="emblem-ring small">
+              <div class="emblem-core small"><i class="fas fa-water"></i></div>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title">Mairie des Aguégués</span>
+              <span class="logo-subtitle">Commune de l'Ouémé · Bénin</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Servir notre peuple, préserver notre patrimoine, bâtir notre avenir ensemble.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Nav Links -->
+        <div class="footer-col">
+          <h4>La Commune</h4>
+          <ul>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#histoire">Histoire</a></li>
+            <li><a href="#tourisme">Tourisme</a></li>
+            <li><a href="#actualites">Actualités</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Administration</h4>
+          <ul>
+            <li><a href="#maire">Le Maire</a></li>
+            <li><a href="#conseil">Conseil Municipal</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#organigramme">Organigramme</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services Citoyens</h4>
+          <ul>
+            <li><a href="#etat-civil">État Civil</a></li>
+            <li><a href="#urbanisme">Urbanisme</a></li>
+            <li><a href="#social">Action Sociale</a></li>
+            <li><a href="#education">Éducation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fas fa-phone"></i> +229 97 00 00 00</li>
+            <li><i class="fas fa-envelope"></i> contact@mairie-aguegues.bj</li>
+            <li><i class="fas fa-clock"></i> Lun-Ven 8h-17h</li>
+            <li><i class="fas fa-map-marker-alt"></i> Aguégués, Ouémé</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Mairie de la Commune des Aguégués — République du Bénin. Tous droits réservés.</p>
+        <div class="footer-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Plan du site</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
